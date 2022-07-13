@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     flex-direction: column;
     color: white;
 }
@@ -34,7 +34,7 @@ body {
     /*grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;*/
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(46, 1fr);
+    grid-template-rows: repeat(108, 1fr);
 }
 
 .box-nav{
@@ -73,7 +73,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 17;
     grid-row-start: 2;
-    grid-row-end: 16;
+    grid-row-end: 18;
 }
 
 .box-tertiarylocation {
@@ -81,8 +81,8 @@ body {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 17;
-    grid-row-start: 16;
-    grid-row-end: 25;
+    grid-row-start: 18;
+    grid-row-end: 35;
 }
 
 .box-contact {
@@ -90,8 +90,8 @@ body {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 17;
-    grid-row-start: 25;
-    grid-row-end: 41;
+    grid-row-start: 35;
+    grid-row-end: 103;
 }
 
 /*Contact page section*/
@@ -103,23 +103,23 @@ body {
 }
 
 .select-contact_content--text {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     justify-content: center;
 }
 .heading-contact,
 .heading-location {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    line-height: 0.8;
+    line-height: 0.6;
     color: cadetblue;
     padding-top: 2%;
 }
 .locations {
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
-    line-height: 0.8;
+    line-height: 0.4;
     color: #fff;
     padding-top: 2%;
 }
@@ -141,15 +141,16 @@ body {
     flex: 0 0 50%;
 }
 .acknowledge {
-    padding-top: 5%;
+    padding-top: 2%;
 }
 .heading-form {
-    padding-top: 5%;
+    padding-top: 2%;
     font-weight: 900;
 }
 #contact-form {
     display: block;
-    max-width: 300px;
+    max-width: 400px;
+    height: 45vh;
     margin: 0 auto;
     border: 1px solid var(--borderColor);
     padding: 15px;
@@ -159,7 +160,7 @@ body {
     padding-bottom: 10%;
 }
 #contact-form label {
-    line-height: 1.0em;
+    line-height: 1.4em;
 }
 #contact-form textarea {
     min-height: 20px;
@@ -187,6 +188,7 @@ body {
     border-bottom: 3px solid slategray;
     cursor: pointer;
     display: flex;
+    padding-top: 3%;
     border-radius: 10px;
     padding: 5px 30px;
     background-color: teal;
@@ -200,16 +202,16 @@ body {
     background: var(--mainColor);
     grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 41;
-    grid-row-end: 46;
+    grid-row-start: 103;
+    grid-row-end: 108;
 }
 
 .box-footer2 {
     background: var(--mainColor);
     grid-column-start: 11;
     grid-column-end: 17;
-    grid-row-start: 41;
-    grid-row-end: 46;
+    grid-row-start: 103;
+    grid-row-end: 108;
 }
 
 /*footer styling*/
