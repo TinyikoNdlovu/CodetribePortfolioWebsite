@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --mainColor: black;
+    --primary-color: cadetblue;
+    --secondaryColor:#fff;
+    --sectionColor: darkslategray;
+
+    --borderColor: slategray;
+
+    --buttonColor: mediumseagreen;
+}
+
+/*Base Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: white;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+}
+
+.box-nav{
+    background: var(--secondaryColor);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.logo{
+    width: 80px;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.box-nav a{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.box-nav a:hover{
+    background-color: teal;
+    color: #ccc;
+}
+
+.box-video{
+    background: var(--borderColor);
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+.section-video_display {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.box-info{
+    background: var(--sectionColor);
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 8;
+    grid-row-end: 16;
+}
+
+.heading-primary {
+    margin-left: 20%;
+    margin-top: 20px;
+    padding-left: 30%;
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: var(--secondaryColor);
+}
+
+.section-bio_content--text {
+    display: flex;
+    margin: 2rem 0 2rem 0;
+}
+
+.paragraph {
+    font: size 1.0rem;
+    padding-left: 30%;
+}
+
+.btn {
+    margin-left: 25%;
+}
+
+.btn_about {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-bottom: 3px solid slategray;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    padding: 5px 30px;
+    background-color: teal; 
+}
+
+.btn_about:hover {
+    transform: scale(0.98);
+}
+
+.box-pic{
+    background: var(--sectionColor);
+    grid-column-start: 12;
+    grid-column-end: 17;
+    grid-row-start: 8;
+    grid-row-end: 16;
+}
+
+.section-bio_image--photo {
+    width: 400px;
+    height: 100%;
+    padding-right: 5%;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.box-footer1{
+    background: var(--mainColor);
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 16;
+    grid-row-end: 19;
+}
+
+.box-footer2 {
+    background: var(--mainColor);
+    grid-column-start: 11;
+    grid-column-end: 17;
+    grid-row-start: 16;
+    grid-row-end:19;
+}
+
+/*footer styling*/
+
+footer .sec {
+    margin-left: 50px;
+}
+
+footer .sec.aboutme {
+    margin-top: 10px;
+    width: 40%;
+    font-weight: 900;
+}
+
+footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p {
+    color: #999;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: teal;
+}
+
+.sci li a .fa {
+    color: skyblue;
+    font-size: 20px;
+}
+
+.con {
+    margin-right: flex-start;
+    display: inline;
+}
+
+.con.contact {
+    width: calc(35% - 60px);
+    font-weight: 900; 
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.info li span {
+    color: #999;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .sec.aboutme,
+    .contact {
+        width: 100%;
+    } 
+}
+

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --mainColor: black;
+    --primary-color: cadetblue;
+    --secondaryColor:#fff;
+    --sectionColor: darkslategray;
+
+    --borderColor: slategray;
+
+    --buttonColor: mediumseagreen;
+}
+
+/*Base Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: white;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(26, 1fr);
+}
+
+.box-nav{
+    background: var(--secondaryColor);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.logo{
+    width: 80px;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.box-nav a{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.box-nav a:hover{
+    background-color: teal;
+    color: #ccc;
+}
+
+.box-biopic{
+    background: var(--sectionColor);
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 9;
+}
+
+.box-info{
+    background: var(--mainColor);
+    display: grid;
+    grid-column-start: 9;
+    grid-column-end: 17;
+    grid-row-start: 2;
+    grid-row-end: 9;
+}
+
+.box-education{
+    background: var(--mainColor);
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 16;
+}
+
+.box-experience{
+    background: var(--sectionColor);
+    display: grid;
+    grid-column-start: 9;
+    grid-column-end: 17;
+    grid-row-start: 9;
+    grid-row-end: 16;
+}
+
+.box-competencies{
+    background: #111;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 16;
+    grid-row-end: 22;
+}
+
+/*About page section*/
+.section-about_language {
+    display: inline;
+    padding: 0 10vw;
+    align-self: center;
+    flex: 0 0 50%;
+    text-align: center;
+}
+.section-about_content {
+    padding: 0 10vw;
+    align-self: center;
+    flex: 0 0 50%;
+} 
+.section-about_content--text {
+    margin: 1.9rem 0 1.9rem 0;
+}
+.section-about_language {
+    padding-top: 6px;
+    padding-bottom: 6px;
+} 
+.section-about_image--photo {
+    width: 144px;
+    height: 144px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.heading-secondary {
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0.4;
+    color: cadetblue;
+    padding-top: 4%;
+}
+.language {
+    font-size: 0.8rem;
+}
+.message {
+    font-size: 0.8rem;
+}
+/*Education and Work Experience section*/
+.section-educationwork_flex {
+    display: flex;
+}
+.section-educationwork_content {
+    padding: 0 10vh;
+    align-self: center;
+    flex: 0 0 50%;
+}
+.section-educationwork_experience {
+    padding: 0 10vh;
+    align-self: center;
+    flex: 0 0 50%;
+} 
+.section-educationwork_content--text {
+    margin: 1.9rem 0 1.9rem 0;
+}
+.heading-education {
+    font-size: 1.0rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0.2;
+    color: cadetblue;
+    padding-top: 5px;
+}
+
+.heading-experience {
+    font-size: 1.0rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0.1;
+    color: cadetblue;
+    padding-top: 4%;
+}
+.studies {
+    font-size: 0.8rem;
+}
+
+.experience {
+    font-size: 0.7rem
+}
+/*Competencies section*/
+.section-competencies_flex {
+    display: flex;
+}
+.section-competencies_content {
+    padding: 0 10vw;
+    align-self: center;
+    flex: 0 0 50%;
+}
+.section-competencies_content--text {
+    margin: 1.9rem 0 1.9rem 0;
+}
+.heading-competencies {
+    font-size: 1.0rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0.4;
+    color: cadetblue;
+    padding-top: 2%;
+}
+.competencies {
+    font-size: 0.7rem;
+}
+
+.box-footer1{
+    background: var(--mainColor);
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 22;
+    grid-row-end: 26;
+}
+
+.box-footer2 {
+    background: var(--mainColor);
+    grid-column-start: 11;
+    grid-column-end: 17;
+    grid-row-start: 22;
+    grid-row-end: 26;
+}
+
+/*footer styling*/
+
+footer .sec {
+    margin-left: 50px;
+}
+
+footer .sec.aboutme {
+    margin-top: 10px;
+    width: 40%;
+    font-weight: 900;
+}
+
+footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p {
+    color: #999;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: teal;
+}
+
+.sci li a .fa {
+    color: skyblue;
+    font-size: 20px;
+}
+
+.con {
+    margin-right: flex-start;
+    display: inline;
+}
+
+.con.contact {
+    width: calc(35% - 60px);
+    font-weight: 900; 
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.info li span {
+    color: #999;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .sec.aboutme,
+    .contact {
+        width: 100%;
+    } 
+}
+

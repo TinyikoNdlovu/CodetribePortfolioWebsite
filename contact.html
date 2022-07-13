@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <title>Contact us</title>
+</head>
+<body>
+     <!-- Here is the logo and the links on the Nav -->
+     <div class="container">
+        <div class="box-nav">
+            <img class="logo" src="./assets/images/logo.png" alt="">
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="box-address">
+            <div class="section-contact_content">
+                <h2 id="contact" class="heading-contact"></h2>
+                <h2 id="location" class="heading-location"></h2><br>
+                <p id="province" class="select-contact_content--text locations"></p>
+                <div class="my-contacts">
+                    <ul class="info">
+                        <li>
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Johannesburg</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">4772 Basambilo Circle Ext 6,<br>
+                            Ivory Park,<br> Midrand,<br> 1685</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-phone"></span>
+                            <span class="text">+27 796644380 <br>
+                                               +27 733595530</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">tinyiko13@yahoo.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box-tertiarylocation">
+            <div class="section-tertiary_content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57595.141194759395!2d28.07998515272926!3d-25.548490500425036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfcf9c4eedb233%3A0x9e2de5e61f9e48e7!2sTshwane%20University%20of%20Technology%20-%20Soshanguve%20South%20Campus%20-%20TUT!5e0!3m2!1sen!2sza!4v1645556678335!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="box-contact">
+            <div class="section-form_content">
+                <p id="chat" class="section-form_content--text acknowledge"></p>
+                <h3 id="inTuoch" class="heading-form"></h3>
+
+                <form id="contact-form" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mlezbznq" method="post">
+                    <label for="name">Name:</label>
+                    <input pattern="[a-zA-Z]+" class="input-field" id="name" placeholder="Name" type="text" required="" name="name" oninput="allow_alphabets(this)">
+
+                    <label for="surname">Surname:</label>
+                    <input pattern="[a-zA-Z]+" class="input-field" id="surname" placeholder="Surname" type="text" required="" name="surname" oninput="allow_alphabets(this)">
+
+                    <label for="phone-number">PhoneNumber:</label>
+                    <input placeholder="PhoneNumber" class="input-field" id="phone" type="number" required="" name="phone" length="10" oninput="check_for_numbers(this)" >
+
+                    <label for="email-address">Email:</label> 
+                    <input pattern=".+@gmail\.com" class="input-field" id="email" placeholder="email@domain.tlc" type="email" required="" name="email">
+
+                    Gender:
+                    Male <input class="radio-field" name="gender" id="male" value="Male" type="radio"> 
+                    Female <input class="radio-field"  name="gender" id="female" value="Female" type="radio"> 
+
+                    <label for="message">Message:</label>
+                    <textarea class="input-field" id="txtarea-message" placeholder="please insert your description here" required="" name="message" cols="30" rows="10"></textarea>
+
+                    <input id="submit-btn" onclick="validate(this.form)" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+        <div class="box-footer1">
+            <footer>
+                <div class="sec aboutme">
+                    <h2>Follow us on</h2>
+                    <p>You can follow me on social media on the provided links below, to learn more about me and how I can assist you with web development related work.</p>
+                            <ul class="sci">
+                                <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+                            </ul>
+                </div>
+        </footer>
+        </div>
+        <div class="box-footer2">
+            <footer>
+                <div class="con contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">4772 Basambilo Circle Ext 6,<br>
+                            Ivory Park,<br> Midrand,<br> 1685</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-phone"></span>
+                            <span class="text">+27 796644380 /
+                                +27 733595530</span>
+                        </li>
+                        <li>
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">tinyiko13@yahoo.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+     </div>
+
+     <script src="./javascript/contact.js">
+         function validate(form){
+                    if (document.getElementById("name").value == "" && document.getElementById("surname").value == "" && document.getElementById("phone").value == "" && document.getElementById("email").value == "" && document.getElementById("country").value == "" && !document.getElementById("male").checked && !document.getElementById("female").checked && document.getElementById("txtarea-message").value == ""){
+                        alert("all fields are required and select gender.");
+                        document.getElementById("name").focus();
+                    }
+                    else {
+                        document.write("name");
+                        document.write("surname");
+                        document.write("phone");
+                        document.write("email");
+                        document.write("country");
+                        ErrorText= "";
+                        if ( ( form.gender[0].checked == false ) && ( form.gender[1].checked == false ) ) 
+                        {
+                            alert ( "Please choose your Gender: Male or Female" ); 
+                            return false;
+                        }
+                        if (ErrorText= "") { form.submit() }
+                        document.write("txtarea-message");
+                    }
+                }
+     </script>
+    
+</body>
+</html>
