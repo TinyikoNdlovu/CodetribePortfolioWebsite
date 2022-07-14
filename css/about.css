@@ -34,7 +34,7 @@ body {
     /*grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;*/
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(27, 1fr);
+    grid-template-rows: repeat(28, 1fr);
 }
 
 .box-nav{
@@ -222,7 +222,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 11;
     grid-row-start: 23;
-    grid-row-end: 27;
+    grid-row-end: 29;
 }
 
 .box-footer2 {
@@ -230,7 +230,7 @@ body {
     grid-column-start: 11;
     grid-column-end: 17;
     grid-row-start: 23;
-    grid-row-end: 27;
+    grid-row-end: 29;
 }
 
 /*footer styling*/

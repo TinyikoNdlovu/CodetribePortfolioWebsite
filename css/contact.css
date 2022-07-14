@@ -34,7 +34,7 @@ body {
     /*grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;*/
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(108, 1fr);
+    grid-template-rows: repeat(130, 1fr);
 }
 
 .box-nav{
@@ -82,7 +82,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 17;
     grid-row-start: 18;
-    grid-row-end: 35;
+    grid-row-end: 45;
 }
 
 .box-contact {
@@ -90,8 +90,8 @@ body {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 17;
-    grid-row-start: 35;
-    grid-row-end: 103;
+    grid-row-start: 45;
+    grid-row-end: 126;
 }
 
 /*Contact page section*/
@@ -202,16 +202,16 @@ body {
     background: var(--mainColor);
     grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 103;
-    grid-row-end: 108;
+    grid-row-start: 126;
+    grid-row-end: 131;
 }
 
 .box-footer2 {
     background: var(--mainColor);
     grid-column-start: 11;
     grid-column-end: 17;
-    grid-row-start: 103;
-    grid-row-end: 108;
+    grid-row-start: 126;
+    grid-row-end: 131;
 }
 
 /*footer styling*/
